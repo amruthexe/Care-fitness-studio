@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-roboto;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-oswald font-bold uppercase;
+  }
+  .h1 {
+    @apply text-white text-7xl lg:text-[128px] tracking-[-3px];
+  }
+  .h2 {
+    @apply text-[36px];
+  }
+  .h3 {
+    @apply text-[32px];
+  }
+  .h4 {
+    @apply text-[26px];
+  }
+  .h5 {
+    @apply text-[22px];
+  }
+}
+
+.active {
+  @apply text-accent;
+}
+
+/* swiper pagination styles */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-accent;
+}
+
+
+.whatsapp-button {
+  animation: ring 1.5s infinite;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+ 
+  
+ 
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+}
