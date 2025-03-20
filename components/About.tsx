@@ -13,21 +13,21 @@ import Achievements from "./Achievements";
 const featured = [
   {
     icon: <FaUsers />,
-    title: "award-winnig trainers",
+    title: "75 Happy Clients",
     subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus in quo.",
+      "We’ve helped 75+ clients achieve their fitness goals in our early days, and the number is growing every day.",
   },
   {
     icon: <IoIosPricetags />,
-    title: "excellent prices",
+    title: "State-of-the-Art Equipment",
     subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus in quo.",
+      "Our gym is equipped with the latest fitness equipment, providing you with everything you need for a successful workout.",
   },
   {
     icon: <FaDumbbell />,
-    title: "modern equipment",
+    title: "19 Training Courses",
     subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus in quo.",
+      "We offer a variety of specialized training courses to cater to different fitness needs and goals, from strength to flexibility.",
   },
 ];
 
@@ -43,7 +43,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.2 }}
             className="h2 text-center"
           >
-            About us
+            About Us
           </motion.h2>
           <motion.p
             variants={fadeIn("up", 0.6)}
@@ -52,8 +52,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.2 }}
             className="max-w-[600px] mx-auto text-center"
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            laudantium vero ipsam! Voluptas, voluptate.
+            Welcome to Care Fitness Studio, your new fitness destination! We are a newly opened gym focused on delivering exceptional fitness services to help you achieve your personal health and wellness goals. Whether you're looking to build strength, improve endurance, or simply stay healthy, we have everything you need to succeed.
           </motion.p>
         </div>
         {/* featured items */}

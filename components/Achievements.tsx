@@ -1,6 +1,6 @@
 "use client";
 
-import { FaBriefcase, FaClock, FaTrophy } from "react-icons/fa";
+import { FaBriefcase, FaClock, FaDumbbell } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
 
 import { useRef } from "react";
@@ -11,22 +11,22 @@ const stats = [
   {
     number: 19,
     icon: FaBriefcase,
-    text: "training courses",
+    text: "Training Courses",
   },
   {
     number: 879,
     icon: FaClock,
-    text: "working hours",
+    text: "Working Hours",
   },
   {
-    number: 150,
+    number: 75,
     icon: ImUsers,
-    text: "happy customers",
+    text: "Happy Clients",
   },
   {
-    number: 9,
-    icon: FaTrophy,
-    text: "international awards",
+    number: 50,
+    icon: FaDumbbell,
+    text: "New Equipment",
   },
 ];
 

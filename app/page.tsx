@@ -12,6 +12,7 @@ import Personal from "@/components/Personal";
 import Team from "@/components/Team";
 import Testimonial from "@/components/Testimonial";
 import VideoPlayer from "@/components/VideoPlayer";
+import ZumbaDance from "@/components/ZumbaDance";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         </div>
       <Classes />
       <Team />
+      <ZumbaDance/>
       <Membership />
       <Personal/>
       <Testimonial />

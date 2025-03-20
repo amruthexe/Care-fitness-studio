@@ -14,7 +14,15 @@ import "swiper/css/navigation";
 import CustomButton from "./CustomButton";
 import SwiperNavButtons from "./SwiperNavButtons";
 
+// Next.js Link import
+import Link from "next/link";
+
 const HeroSlider = () => {
+  // WhatsApp link handler
+  const phoneNumber = "+918861994863"; // The number to contact on WhatsApp
+  const message = "I'm interested"; // The pre-filled message
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
     <Swiper className="h-full">
       <SwiperSlide>
@@ -36,8 +44,8 @@ const HeroSlider = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="text-white italic text-center lg:text-left mb-4"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              recusandae nihil culpa.
+              🏋️‍♂️ Push Your Limits – No excuses, only results.  
+              🔥 Train Hard – Sweat, sacrifice, and success.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.8)}
@@ -45,10 +53,12 @@ const HeroSlider = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
             >
-              <CustomButton
-                text="Get started"
-                containerStyles="w-[196px] h-[62px]"
-              />
+              <Link href={url} passHref>
+                <CustomButton
+                  text="Get started"
+                  containerStyles="w-[196px] h-[62px]"
+                />
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -72,8 +82,7 @@ const HeroSlider = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="text-white italic text-center lg:text-left mb-4"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              recusandae nihil culpa.
+              🏋️‍♂️ Push Your Limits – No excuses, only results.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.8)}
@@ -81,10 +90,12 @@ const HeroSlider = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
             >
-              <CustomButton
-                text="Get started"
-                containerStyles="w-[196px] h-[62px]"
-              />
+              <Link href={url} passHref>
+                <CustomButton
+                  text="Get started"
+                  containerStyles="w-[196px] h-[62px]"
+                />
+              </Link>
             </motion.div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { MdClose } from "react-icons/md";
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck } from "react-icons/fa";
 
 // components
 import CustomButton from "./CustomButton";
@@ -20,7 +20,7 @@ import "swiper/css/pagination";
 const membershipData = [
   {
     title: "Standard",
-    price: "30",
+    price: "₹ 999",
     benefits: [
       {
         icon: FaCheck,
@@ -46,15 +46,12 @@ const membershipData = [
         icon: FaCheck,
         text: "Full access to everything",
       },
-      {
-        icon: MdClose,
-        text: "No additional amenities",
-      },
     ],
+    message: "Hi, I am interested in the Standard package at your gym.",
   },
   {
     title: "Ultimate",
-    price: "45",
+    price: "₹ 1999",
     benefits: [
       {
         icon: FaCheck,
@@ -80,15 +77,12 @@ const membershipData = [
         icon: FaCheck,
         text: "Full access to everything",
       },
-      {
-        icon: MdClose,
-        text: "No additional amenities",
-      },
     ],
+    message: "Hi, I am interested in the Ultimate package at your gym.",
   },
   {
     title: "Professional",
-    price: "60",
+    price: "₹ 2499",
     benefits: [
       {
         icon: FaCheck,
@@ -114,13 +108,17 @@ const membershipData = [
         icon: FaCheck,
         text: "Full access to everything",
       },
-      {
-        icon: FaCheck,
-        text: "No additional amenities",
-      },
     ],
+    message: "Hi, I am interested in the Professional package at your gym.",
   },
 ];
+
+// function to handle the "Buy now" button click
+const handleBuyNow = ( message:any) => {
+  const phoneNumber = "+918861994863"; // Provided phone number
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank"); // Open WhatsApp with pre-filled message
+};
 
 const MembershipSlider = () => {
   return (
@@ -150,25 +148,32 @@ const MembershipSlider = () => {
               {/* benefits */}
               <div className="py-[30px] px-[60px]">
                 <ul className="flex flex-col gap-5 mb-7">
-                  {item.benefits.map((item, index) => {
+                  {item.benefits.map((benefit, index) => {
                     return (
                       <li key={index} className="flex items-center gap-2">
-                        <item.icon className="text-accent text-lg" />
-                        {item.text}
+                        <benefit.icon className="text-accent text-lg" />
+                        {benefit.text}
                       </li>
                     );
                   })}
                 </ul>
                 {/* price & button */}
                 <p className="text-accent mb-8 flex gap-1 items-center">
-                  <sup className="text-4xl">$</sup>
-                  <strong className="text-6xl">{item.price}</strong>
+                  <strong className="text-4xl">{item.price}</strong>
                   <em className="self-end text-2xl">/month</em>
                 </p>
-                <CustomButton
-                  containerStyles="w-[196px] h-[62px]"
-                  text="Buy now"
-                />
+                <a
+                  href={`https://wa.me/+918861994863?text=${encodeURIComponent(
+                    item.message
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <CustomButton
+                    containerStyles="w-[196px] h-[62px]"
+                    text="Buy now"
+                  />
+                </a>
               </div>
             </div>
           </SwiperSlide>
