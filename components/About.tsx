@@ -52,7 +52,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.2 }}
             className="max-w-[600px] mx-auto text-center"
           >
-            Welcome to Care Fitness Studio, your new fitness destination! We are a newly opened gym focused on delivering exceptional fitness services to help you achieve your personal health and wellness goals. Whether you're looking to build strength, improve endurance, or simply stay healthy, we have everything you need to succeed.
+            Welcome to Care Fitness Studio, your new fitness destination! We are a newly opened gym focused on delivering exceptional fitness services to help you achieve your personal health and wellness goals. Whether you&apos;re looking to build strength, improve endurance, or simply stay healthy, we have everything you need to succeed.
           </motion.p>
         </div>
         {/* featured items */}
