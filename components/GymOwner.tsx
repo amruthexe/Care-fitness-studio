@@ -25,19 +25,6 @@ const GymOwner: React.FC = () => {
             <h2 className="text-3xl font-semibold mb-4">
               Supreeth Malur
             </h2>
-            <p className="text-xl mb-2">Owner @ Care Fitness Studio</p>
-            <p className="text-lg mb-4">
-              Fitness Model | ᴄᴏɴꜱᴏʟᴇ.ʟᴏɢ(“ʜᴇʟʟᴏ! ᴡᴏʀʟᴅ”); 🙋🏻‍♂️
-            </p>
-            <p className="text-lg mb-4">
-              ɢᴏᴅ •ꜰᴀɪᴛʜ •ɢʏᴍ
-            </p>
-            <p className="text-lg mb-4">
-              ᴏᴡɴᴇʀ @care.fitness.studio
-            </p>
-            <p className="text-lg mb-4">
-              🎓 BCA / MCA
-            </p>
             <p className="text-lg mb-4">
               Instagram: <a href="https://www.instagram.com/aesthetic_muscle0204/" className="text-blue-500">@aesthetic_muscle0204</a>
             </p>
