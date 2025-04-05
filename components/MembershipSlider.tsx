@@ -20,7 +20,7 @@ import "swiper/css/pagination";
 const membershipData = [
   {
     title: "Standard",
-    price: "₹ 999",
+    price: "₹ 1499",
     benefits: [
       {
         icon: FaCheck,
@@ -50,8 +50,8 @@ const membershipData = [
     message: "Hi, I am interested in the Standard package at your gym.",
   },
   {
-    title: "Ultimate",
-    price: "₹ 1999",
+    title: "Personal Training",
+    price: "₹ 4999",
     benefits: [
       {
         icon: FaCheck,
@@ -81,8 +81,8 @@ const membershipData = [
     message: "Hi, I am interested in the Ultimate package at your gym.",
   },
   {
-    title: "Professional",
-    price: "₹ 2499",
+    title: "Competition Pack",
+    price: "₹49,999",
     benefits: [
       {
         icon: FaCheck,
